@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marknadsundersökning 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="topbar" id="topbar">
+<div>
+<div class="mini-eyebrow">Marknadsundersökning 2026</div>
+<div class="mini-title">Transportbilar och lätta företagsfordon</div>
+</div>
+<div class="step-count" id="stepCount">Fråga 1 av 12</div>
+</div>
+
+<div class="prog-wrap">
+<div class="prog-bar" id="prog"></div>
+</div>
+
+<div class="error" id="errorMsg">Välj ett svar för att gå vidare.</div>
+
+<div class="step cover on" id="s0">
+<div class="eyebrow">Marknadsundersökning 2026</div>
+<h1>Transportbilar och lätta företagsfordon</h1>
+<p class="intro">Vi undersöker hur svenska företag använder och väljer transportbilar i det dagliga arbetet. Undersökningen handlar bland annat om komfort, säkerhet, utrustning och vilka egenskaper som upplevs skapa mest värde i moderna företagsfordon.</p>
+
+<div class="qtitle">Vilken typ av organisation representerar du?</div>
+
+<div class="opts" id="q0" data-auto="true">
+<div class="opt" onclick="pick(this,'q0','r')"><input type="radio"><label>Enskild firma / egenföretagare</label></div>
+<div class="opt" onclick="pick(this,'q0','r')"><input type="radio"><label>Litet företag (2–10 anställda)</label></div>
+<div class="opt" onclick="pick(this,'q0','r')"><input type="radio"><label>Medelstort företag (11–50 anställda)</label></div>
+<div class="opt" onclick="pick(this,'q0','r')"><input type="radio"><label>Större företag (51+ anställda)</label></div>
+<div class="opt" onclick="pick(this,'q0','r')"><input type="radio"><label>Offentlig verksamhet</label></div>
+</div>
+</div>
+
+<div class="step" id="s1">
+<div class="qtitle">Vilken bransch arbetar verksamheten främst inom?</div>
+<div class="opts" id="q1">
+<div class="opt" onclick="pick(this,'q1','r')"><input type="radio"><label>Bygg och hantverk</label></div>
+<div class="opt" onclick="pick(this,'q1','r')"><input type="radio"><label>Transport och logistik</label></div>
+<div class="opt" onclick="pick(this,'q1','r')"><input type="radio"><label>Service och installation</label></div>
+<div class="opt" onclick="pick(this,'q1','r')"><input type="radio"><label>Handel och distribution</label></div>
+<div class="opt" onclick="pick(this,'q1','r')"><input type="radio"><label>Fastighet och drift</label></div>
+<div class="opt" onclick="pick(this,'q1','r')"><input type="radio"><label>Jordbruk och lantbruk</label></div>
+<div class="opt" onclick="pick(this,'q1','r')"><input type="radio"><label>Offentlig verksamhet</label></div>
+<div class="opt" onclick="pick(this,'q1','r')"><input type="radio"><label>Annat</label></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s2">
+<div class="qtitle">Vilken typ av transportbil använder ni främst i verksamheten?</div>
+<div class="opts" id="q2">
+<div class="opt" onclick="pick(this,'q2','r')"><input type="radio"><label>Skåpbil</label></div>
+<div class="opt" onclick="pick(this,'q2','r')"><input type="radio"><label>Flakbil</label></div>
+<div class="opt" onclick="pick(this,'q2','r')"><input type="radio"><label>Bakgaveliftsbil</label></div>
+<div class="opt" onclick="pick(this,'q2','r')"><input type="radio"><label>Servicebil</label></div>
+<div class="opt" onclick="pick(this,'q2','r')"><input type="radio"><label>Pickup</label></div>
+<div class="opt" onclick="pick(this,'q2','r')"><input type="radio"><label>Flera olika typer</label></div>
+<div class="opt" onclick="pick(this,'q2','r')"><input type="radio"><label>Annat</label></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s3">
+<div class="qtitle">Hur många transportbilar eller lätta företagsfordon har verksamheten?</div>
+<div class="opts" id="q3">
+<div class="opt" onclick="pick(this,'q3','r')"><input type="radio"><label>1 fordon</label></div>
+<div class="opt" onclick="pick(this,'q3','r')"><input type="radio"><label>2–5 fordon</label></div>
+<div class="opt" onclick="pick(this,'q3','r')"><input type="radio"><label>6–15 fordon</label></div>
+<div class="opt" onclick="pick(this,'q3','r')"><input type="radio"><label>16–50 fordon</label></div>
+<div class="opt" onclick="pick(this,'q3','r')"><input type="radio"><label>Fler än 50 fordon</label></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s4">
+<div class="qtitle">Vilka faktorer är viktigast när ni väljer transportbil?</div>
+<p class="hint">Välj upp till 3 alternativ.</p>
+<div class="opts" id="q4">
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Pris och totalkostnad</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Driftsäkerhet</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Lastkapacitet och utrymme</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Bränsleförbrukning eller räckvidd</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Komfort för föraren</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Säkerhetsutrustning</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Leveranstid</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Service och support</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Varumärke och rykte</label></div>
+<div class="opt" onclick="pick(this,'q4','m',3)"><input type="checkbox"><label>Anpassningsmöjligheter</label></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s5">
+<div class="qtitle">Hur nöjd är du med era nuvarande transportbilar?</div>
+<div class="range-box">
+<div class="range-value" id="v5">Välj ett värde</div>
+<input class="range" id="q5" type="range" min="1" max="5" value="1" data-touched="false" oninput="rangeChange(this,'v5')">
+<div class="range-labels"><span>Mycket missnöjd</span><span>Mycket nöjd</span></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s6">
+<div class="qtitle">Vilken är den största utmaningen med era nuvarande fordon?</div>
+<div class="opts" id="q6">
+<div class="opt" onclick="pick(this,'q6','r')"><input type="radio"><label>Höga drift- eller servicekostnader</label></div>
+<div class="opt" onclick="pick(this,'q6','r')"><input type="radio"><label>För liten lastvolym eller lastkapacitet</label></div>
+<div class="opt" onclick="pick(this,'q6','r')"><input type="radio"><label>Driftstopp eller tekniska problem</label></div>
+<div class="opt" onclick="pick(this,'q6','r')"><input type="radio"><label>Bristande komfort</label></div>
+<div class="opt" onclick="pick(this,'q6','r')"><input type="radio"><label>Bristande säkerhetsfunktioner</label></div>
+<div class="opt" onclick="pick(this,'q6','r')"><input type="radio"><label>Svårt att få service eller reservdelar</label></div>
+<div class="opt" onclick="pick(this,'q6','r')"><input type="radio"><label>Fordonen passar inte verksamhetens behov fullt ut</label></div>
+<div class="opt" onclick="pick(this,'q6','r')"><input type="radio"><label>Vi upplever inga större problem</label></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s7">
+<div class="qtitle">Vad förknippar du främst med ett premiumfordon?</div>
+<p class="hint">Välj upp till 3 alternativ.</p>
+<div class="opts" id="q7">
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Hög komfort</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Hög säkerhet</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Modern teknik</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Hög kvalitet och finish</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Tyst och behaglig körupplevelse</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Professionell design</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Hög driftsäkerhet</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Bra service och support</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Låg total ägandekostnad</label></div>
+<div class="opt" onclick="pick(this,'q7','m',3)"><input type="checkbox"><label>Hållbarhet och miljöprofil</label></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s8">
+<div class="qtitle">Vilka funktioner upplever du som viktigast i ett modernt företagsfordon?</div>
+<p class="hint">Välj upp till 4 alternativ.</p>
+<div class="opts" id="q8">
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Ergonomiska säten</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Automatväxellåda</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Klimatanläggning / AC</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Parkeringskamera och sensorer</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Adaptiv farthållare</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Smartphone-integration</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Digital instrumentpanel</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Förarassistanssystem</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Låg ljudnivå i kupén</label></div>
+<div class="opt" onclick="pick(this,'q8','m',4)"><input type="checkbox"><label>Förvaringsutrymmen i hytten</label></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s9">
+<div class="qtitle">Hur viktigt är fordonets design och utseende för verksamheten?</div>
+<div class="range-box">
+<div class="range-value" id="v9">Välj ett värde</div>
+<input class="range" id="q9" type="range" min="1" max="5" value="1" data-touched="false" oninput="rangeChange(this,'v9')">
+<div class="range-labels"><span>Inte viktigt</span><span>Mycket viktigt</span></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s10">
+<div class="qtitle">Hur mycket mer skulle ni kunna tänka er att betala för ett transportfordon med högre komfort, bättre säkerhet och mer utrustning?</div>
+<div class="opts" id="q10">
+<div class="opt" onclick="pick(this,'q10','r')"><input type="radio"><label>Ingenting extra</label></div>
+<div class="opt" onclick="pick(this,'q10','r')"><input type="radio"><label>Upp till 5 % mer</label></div>
+<div class="opt" onclick="pick(this,'q10','r')"><input type="radio"><label>5–15 % mer</label></div>
+<div class="opt" onclick="pick(this,'q10','r')"><input type="radio"><label>15–25 % mer</label></div>
+<div class="opt" onclick="pick(this,'q10','r')"><input type="radio"><label>Mer än 25 %</label></div>
+</div>
+<div class="nav"><button class="btn btn-g" onclick="go(-1)">← Tillbaka</button><button class="btn btn-p" onclick="go(1)">Nästa →</button></div>
+</div>
+
+<div class="step" id="s11">
+<div class="qtitle">Om du själv kunde utforma den optimala transportbilen för verksamheten – vilka egenskaper skulle den ha?</div>
+<p class="hint">Frivilligt.</p>
+<textarea id="comments" placeholder="Skriv gärna vad som skulle vara viktigast för er..."></textarea>
+<div class="nav"><button class="btn btn-p" id="submitBtn" onclick="submitSurvey()">Skicka svar</button></div>
+</div>
+
+<div class="step loading" id="loading">
+<div class="loader"></div>
+<h2>Skickar svar...</h2>
+<p>Vänta ett ögonblick. Stäng inte sidan.</p>
+</div>
+
+<div class="step done" id="done">
+<h2>Tack för din medverkan!</h2>
+<p>Ditt svar har registrerats. Du kan nu stänga sidan.</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
